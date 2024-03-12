@@ -9,42 +9,57 @@ function setup() {
   }
   // Backbround and Art
   function draw() {
-    background("pink");
+    background("orange");
     
     // Rectangle background
-    fill("purple");
+    fill("brown");
     noStroke();
     rect(100,0,40,100);
     
     // Circle - centerpiece
     fill("gold")
-    stroke("yellow"); // color
+    stroke("darkorange"); // color
     strokeWeight(4); // border width
     ellipse(200,200,100,100);
   
-    // White Ovals - 3
-    fill("white")
+    // White Ovals - 4
+    fill("darkblue")
+    noStroke(); 
+    ellipse(200,100,50,75);
+
+    fill("darkgreen")
     noStroke(); 
     ellipse(100,200,75,50);
+
+    fill("purple")
+    stroke("white"); // color
+    strokeWeight(1); // border width
+    ellipse(100,280,160,19);
+
+    // Rectangle foreground
+    fill("lightorange");
+    noStroke();
+    rect(250,50,120,50);
     
-    fill("white")
+    fill("black")
     noStroke(); 
     ellipse(200,300,50,75);
-    
-  
-    fill("white")
-    noStroke(); 
+      
+    fill("tan")
+    stroke("blue"); // color
+    strokeWeight(2); // border width
     ellipse(300,200,75,50);
     
     // Triangle 
-    fill("yellow");
-    stroke("gold");
+    fill("gray");
+    stroke("skyblue");
     strokeWeight(3);
     triangle(200,200,150,100,250,100);
     
     // Rectangle foreground
-    fill("lightgreen");
-    noStroke();
-    rect(200,300,160,80);
+    fill("lightblue");
+    stroke("brown");
+    strokeWeight(2);
+    rect(200,350,160,80);
     
   }
