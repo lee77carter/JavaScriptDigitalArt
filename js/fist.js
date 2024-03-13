@@ -13,6 +13,10 @@ function setup() {
   stroke("#E493F2");
   arc(0,0,600,600,0,90);
 
+  fill("rgb(228,145,242)");
+  noStroke();
+  arc(600,600,600,600,360,270);
+
   // left fist
     fill("brown")
     noStroke();
@@ -41,6 +45,11 @@ function setup() {
     noStroke();
     quad(100,170,144,170,120,200,95,200);
     quad(40,170,90,170,90,200,58,200);
+
+  // left forearm
+    fill("brown");
+    noStroke();
+    quad(60,205,120,205,120,271,44,293);
     
   // middle fist
   // fingers
@@ -78,6 +87,11 @@ function setup() {
     noStroke();
     quad(215,418,277,417,240,453,230,450);
     
+  // middle forearm
+    fill("#795548");
+    noStroke();
+    quad(240,460,333,466,335,height,230,height);
+
   // right fist
     fill("#c58c85");
     noStroke();
@@ -105,6 +119,11 @@ function setup() {
     fill("#c58c85");
     noStroke();
     quad(500,160,544,160,530,200,500,200);
+
+  // right forearm
+    fill("#c58c85");
+    noStroke();
+    quad(460,208,530,208,540,304,458,334);
     
     
     console.log("x", mouseX, "y", mouseY);
