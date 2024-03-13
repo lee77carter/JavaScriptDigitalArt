@@ -1,130 +1,183 @@
 // Art using the quad function
 
 function setup() {
-    createCanvas(600, 600);
-  }
+  createCanvas(600, 600);
+}
+
+function draw() {
+  background("#0B5C0F");
   
-  function draw() {
-    background("rgb(230,124,230)");
+// for loop
+  for (let i = 0; i < 600; i+=20) {
+    stroke("#FFC107");
+    strokeWeight(10);
+    line(0,i,i,600);
+  }
 
-  // arc
-  fill("purple");
+// arcs
+  fill("#F8835F");
   strokeWeight(8);
-  stroke("#E493F2");
+  stroke("#272321");
   arc(0,0,600,600,0,90);
-
-  fill("rgb(228,145,242)");
+  
+  fill("rgb(207,23,9)");
   noStroke();
   arc(600,600,600,600,360,270);
-
-  // left fist
-    fill("brown")
-    noStroke();
-    quad(45,100,60,100,65,131,50,134);
-    
-    fill("brown")
-    noStroke();
-    quad(65,95,95,85,100,148,79,148);
-    
-    fill("brown")
-    noStroke();
-    quad(100,85,120,85,125,140,105,140);
-    
-    fill("brown")
-    noStroke();
-    quad(125,95,140,95,140,130,125,130);
-    
-  // thumb
-    fill("brown");
-    noStroke();
-    rect(90,140,45,20,5);
-    rect(118,140,25,35,3);
-    
-  // palm
-    fill("brown")
-    noStroke();
-    quad(100,170,144,170,120,200,95,200);
-    quad(40,170,90,170,90,200,58,200);
-
-  // left forearm
-    fill("brown");
-    noStroke();
-    quad(60,205,120,205,120,271,44,293);
-    
-  // middle fist
-  // fingers
-    fill("#795548")
-    noStroke();
-    quad(195,288,232,265,243,345,232,350);
-    
-    fill("#795548")
-    noStroke();
-    quad(233,258,275,250,285,348,255,350);
   
-    fill("#795548")
-    noStroke();
-    quad(280,255,315,250,320,327,290,340);
-    
-    fill("#795548")
-    noStroke();
-    quad(320,260,350,260,340,315,325,320);
-    
-  // thumb
-    fill("#795548");
-    noStroke();
-    quad(300,347,360,330,370,370,305,375);
-    
-    fill("#795548");
-    noStroke();
-    quad(332,370,370,370,373,380,335,395);
-    
-  // palm
-    fill("#795548");
-    noStroke();
-    quad(300,400,373,380,335,460,240,455);
-    
-    fill("#795548");
-    noStroke();
-    quad(215,418,277,417,240,453,230,450);
-    
-  // middle forearm
-    fill("#795548");
-    noStroke();
-    quad(240,460,333,466,335,height,230,height);
+// mic
+  fill("black");
+  noStroke();
+  rect(10,120,190,40,6);
+  
+  fill("black");
+  circle(200,140,65);
+  
+  fill("gray")
+  rect(160,120,15,40);
+  
+// left fist
+  fill("brown")
+  noStroke();
+  quad(45,100,60,100,65,131,50,134);
+  
+  fill("brown")
+  noStroke();
+  quad(65,95,95,85,100,148,79,148);
+  
+  fill("brown")
+  noStroke();
+  quad(100,85,120,85,125,140,105,140);
+  
+  fill("brown")
+  noStroke();
+  quad(125,95,140,95,140,130,125,130);
+  
+// thumb
+  fill("brown");
+  noStroke();
+  rect(90,140,45,20,5);
+  rect(118,140,25,35,3);
+  
+// palm
+  fill("brown")
+  noStroke();
+  quad(100,170,144,170,120,200,95,200);
+  quad(40,170,90,170,90,200,58,200);
+  
+// left forearm
+  fill("brown");
+  noStroke();
+  quad(60,205,120,205,120,271,44,293);
+  
+// phone
+  fill("black");
+  stroke("gray");
+  rect(150,290,260,120,6);
+  
+// middl#977164
+// fingers
+  fill("#A06A56")
+  noStroke();
+  quad(195,288,232,265,243,345,232,350);
+  
+  fill("#A06A56")
+  noStroke();
+  quad(233,258,275,250,285,348,255,350);
 
-  // right fist
-    fill("#c58c85");
-    noStroke();
-    quad(445,101,460,100,465,131,450,134);
-    
-    fill("#c58c85");
-    noStroke();
-    quad(465,95,495,85,500,155,479,155);
-    
-    fill("#c58c85");
-    noStroke();
-    quad(500,85,520,85,525,140,505,140);  
-    
-    fill("#c58c85");
-    noStroke();
-    quad(526,95,540,95,540,130,525,130);  
-    
-  // thumb
-    fill("#c58c85");
-    noStroke();
-    rect(440,135,45,20,5);
-    rect(440,135,25,35,3)
-    
-  // palm
-    fill("#c58c85");
-    noStroke();
-    quad(500,160,544,160,530,200,500,200);
-
-  // right forearm
-    fill("#c58c85");
-    noStroke();
-    quad(460,208,530,208,540,304,458,334);
-    
-    
-    console.log("x", mouseX, "y", mouseY);
-  }
+  fill("#A06A56")
+  noStroke();
+  quad(280,255,315,250,320,327,290,340);
+  
+  fill("#A06A56")
+  noStroke();
+  quad(320,260,350,260,340,315,325,320);
+  
+// thumb
+  fill("#A06A56");
+  noStroke();
+  quad(300,347,360,330,370,370,305,375);
+  
+  fill("#A06A56");
+  noStroke();
+  quad(332,370,370,370,373,380,335,395);
+  
+// palm
+  fill("#A06A56");
+  noStroke();
+  quad(300,400,373,380,335,460,240,455);
+  
+  fill("#A06A56");
+  noStroke();
+  quad(215,418,277,417,240,453,230,450);
+  
+  
+// middle forearm
+  fill("#A06A56");
+  noStroke();
+  quad(240,460,333,466,335,height,230,height);
+  
+// pencil
+  fill("orange");
+  noStroke();
+  rect(400,115,190,15);
+  
+  fill("beige");
+  noStroke();
+  triangle(370,122,400,115,400,130);
+  
+// paint brush
+// bristle
+  fill("#795548");
+  noStroke();
+  arc(340,147,60,30,180,0);
+  
+  fill("#795548");
+  noStroke();
+  ellipse(345,143,60,20);
+  
+// handle
+  fill("brown");
+  noStroke();
+  rect(370,135,220,15,6);
+  
+// fastener
+  fill("black");
+  noStroke();
+  rect(370,135,15,15);
+  
+// right fist
+  fill("#795548");
+  noStroke();
+  quad(445,101,460,100,465,131,450,134);
+  
+  fill("#795548");
+  noStroke();
+  quad(465,95,495,85,500,155,479,155);
+  
+  fill("#795548");
+  noStroke();
+  quad(500,85,520,85,525,140,505,140);  
+  
+  fill("#795548");
+  noStroke();
+  quad(526,95,540,95,540,130,525,130);  
+  
+// thumb
+  fill("#795548");
+  noStroke();
+  rect(440,135,45,20,5);
+  rect(440,135,25,35,3)
+  
+// palm
+  fill("#795548");
+  noStroke();
+  quad(500,160,544,160,530,200,500,200);
+  
+// right forearm
+  fill("#795548");
+  noStroke();
+  quad(460,208,530,208,540,304,458,334);
+  
+  
+  console.log("x", mouseX, "y", mouseY);
+}
