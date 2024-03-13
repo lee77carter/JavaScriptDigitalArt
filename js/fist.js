@@ -6,7 +6,13 @@ function setup() {
   
   function draw() {
     background("rgb(230,124,230)");
-    
+
+  // arc
+  fill("purple");
+  strokeWeight(8);
+  stroke("#E493F2");
+  arc(0,0,600,600,0,90);
+
   // left fist
     fill("brown")
     noStroke();
